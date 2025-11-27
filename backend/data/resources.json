@@ -1,0 +1,62 @@
+[
+  {
+    "id": "resource_001",
+    "name": "Broward Autism Support Center",
+    "county": "Broward",
+    "type": "therapy",
+    "description": "Family-centered ABA therapy, social groups, and care coordination.",
+    "address": "2900 W Cypress Creek Rd, Fort Lauderdale, FL",
+    "phone": "954-555-1144",
+    "website": "https://example.org/broward-asc"
+  },
+  {
+    "id": "resource_002",
+    "name": "Miami-Dade Neurodiversity Collective",
+    "county": "Miami-Dade",
+    "type": "community",
+    "description": "Peer mentoring, job coaching, and caregiver respite nights.",
+    "address": "1200 Brickell Ave, Miami, FL",
+    "phone": "305-555-8899",
+    "website": "https://example.org/md-collective"
+  },
+  {
+    "id": "resource_003",
+    "name": "Palm Beach Speech & Occupational Therapy",
+    "county": "Palm Beach",
+    "type": "therapy",
+    "description": "Integrated speech, OT, and assistive tech labs for all ages.",
+    "address": "75 S County Rd, Palm Beach, FL",
+    "phone": "561-555-4401",
+    "website": "https://example.org/pb-sot"
+  },
+  {
+    "id": "resource_004",
+    "name": "Broward Inclusive Recreation",
+    "county": "Broward",
+    "type": "recreation",
+    "description": "Adaptive sports, weekend camps, and caregiver workshops.",
+    "address": "One Panther Pkwy, Sunrise, FL",
+    "phone": "954-555-2200",
+    "website": "https://example.org/broward-rec"
+  },
+  {
+    "id": "resource_005",
+    "name": "Miami Neuro Resource Hub",
+    "county": "Miami-Dade",
+    "type": "information",
+    "description": "Centralized directory of evaluations, financial aid, and respite care.",
+    "address": "95 NW 4th St, Miami, FL",
+    "phone": "305-555-7712",
+    "website": "https://example.org/miami-hub"
+  },
+  {
+    "id": "resource_006",
+    "name": "Palm Beach Parent Connect",
+    "county": "Palm Beach",
+    "type": "community",
+    "description": "Monthly parent circles, sibling hangouts, and advocacy trainings.",
+    "address": "400 Hibiscus St, West Palm Beach, FL",
+    "phone": "561-555-3322",
+    "website": "https://example.org/pb-parent-connect"
+  }
+]

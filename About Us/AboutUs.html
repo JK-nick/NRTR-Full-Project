@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Nrtur Resources</title>
+  <link rel="stylesheet" href="aboutus-style.css">
+</head>
+
+<script>
+  function showThankYou(event) {
+    event.preventDefault(); // stop form from reloading page
+    document.getElementById("thankyou-modal").style.display = "flex";
+  }
+
+  function closeThankYou() {
+    document.getElementById("thankyou-modal").style.display = "none";
+  }
+</script>
+
+  <!-- Thank You Popup Modal -->
+<div id="thankyou-modal" class="thankyou-modal">
+  <div class="thankyou-box">
+    <button class="close-modal" onclick="closeThankYou()">×</button>
+    <h3>Thank you!</h3>
+    <p>Thank you for filling out the form. We’ll reach out to you for more information.</p>
+  </div>
+</div>
+
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo"><a href="/nrtr.html">Nrtr</a></div>
+    <nav class="nav-links">
+      <a href="/nrtr.html">Home</a>
+      <a href="/Services /services.html">Services</a>
+      <a href="/Scholarships/Scholarships-Jobs.html">Scholarships & Jobs</a>
+      <a href="AboutUs.html" class="active">About Us</a>
+      <a href="/login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content-container">
+    <section class="about-intro">
+      <h1>About Us</h1>
+      <h2>Why We Do This</h2>
+      <p>
+        At Nrtur Resources, we believe every individual — regardless of ability — deserves access
+        to education, opportunity, and inclusion. Our goal is to make finding autism and
+        disability-related resources simple, accessible, and empowering for families and individuals
+        across South Florida and beyond.
+      </p>
+    </section>
+
+      <div class="team-member left">
+        <div class="team-card">
+          <img src="/Pictures/Better Gemini.png" alt="Nick Jules photo">
+          <h3>Nick Jules</h3>
+        </div>
+
+        <div class="member-info">
+          <p>
+            Hello everyone, my name is Nick Jules. I’m a developer who loves building creative and 
+            accessible technology, especially tools that make life easier for neurodiverse communities. 
+            I’ve seen firsthand how important support and inclusivity are, so it means a lot to me 
+            to work on something that can open doors, create opportunities, and truly make a difference 
+            for people who need it.
+          </p>
+        </div>
+      </div>
+
+      <div class="team-member right">
+        <div class="member-info">
+          <p>
+            Hello everyone, my name is Abubaker my friends call me Abu. I’ve interned at 
+            Disney, and I’m currently working as a barista. I love nature and enjoy helping 
+            people find the resources they need. I’m also disabled, so it means a lot to me 
+            to create something that can support others who face similar challenges.
+          </p>
+        </div>
+
+        <div class="team-card">
+          <img src="/Pictures/IMG_2669.png" alt="Abo A. photo">
+          <h3>Abo A.</h3>
+        </div>
+
+      </div>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <form class="contact-form" onsubmit="showThankYou(event)">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name">
+
+          <label for="request">Request</label>
+          <input type="text" id="request" placeholder="Scholarship info, county help, etc.">
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div class="contact-info">
+          <p>
+            We’re here to help you find the support, scholarships, and opportunities you need.
+            <br><br>
+            📧 <strong>Email:</strong> info@nrturresources.org<br>
+            📍 <strong>Location:</strong> South Florida<br>
+            🕒 <strong>Hours:</strong> Mon–Fri, 9am–5pm
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Suggest a Resource Section -->
+    <section id="suggest-resource" class="suggest-section">
+      <h2>Suggest a Resource</h2>
+      <p class="suggest-desc">
+        Know a scholarship, hospital, program, internship, or organization that should be featured on Nrtur?
+        Share it with us below — we’d love to add it to help others in the community.
+      </p>
+
+      <div class="suggest-container">
+        <form class="suggest-form" onsubmit="showThankYou(event)">
+          <label for="s-name">Your Name</label>
+          <input type="text" id="s-name" placeholder="Your Name">
+
+          <label for="s-type">Type of Resource</label>
+          <input type="text" id="s-type" placeholder="Scholarship, hospital, internship, etc.">
+
+          <label for="s-link">Link (optional)</label>
+          <input type="text" id="s-link" placeholder="https://example.com">
+
+          <label for="s-desc">Description</label>
+          <textarea id="s-desc" rows="5" placeholder="Tell us about this resource..."></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2025 Nrtur Resources — Empowering individuals with special needs through education and opportunity.</p>
+  </footer>
+</body>
+</html>

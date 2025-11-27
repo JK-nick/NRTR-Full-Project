@@ -1,0 +1,42 @@
+[
+  {
+    "id": "opportunity_001",
+    "title": "Emerging Voices Scholarship",
+    "category": "scholarship",
+    "county": "Statewide",
+    "description": "$2,500 award supporting neurodivergent creators pursuing communications or design programs.",
+    "deadline": "2024-12-01",
+    "award": 2500,
+    "link": "https://example.org/emerging-voices"
+  },
+  {
+    "id": "opportunity_002",
+    "title": "South Florida Inclusive Internship",
+    "category": "internship",
+    "county": "Broward",
+    "description": "Paid summer internship pairing autistic students with local civic tech teams.",
+    "deadline": "2024-05-15",
+    "award": 18,
+    "link": "https://example.org/sf-internship"
+  },
+  {
+    "id": "opportunity_003",
+    "title": "Healthcare Pathfinder Apprenticeship",
+    "category": "job",
+    "county": "Miami-Dade",
+    "description": "Entry-level hospital operations role with built-in coaching and certification stipends.",
+    "deadline": null,
+    "award": null,
+    "link": "https://example.org/health-apprentice"
+  },
+  {
+    "id": "opportunity_004",
+    "title": "Palm Beach Technology Scholarship",
+    "category": "scholarship",
+    "county": "Palm Beach",
+    "description": "Funding for coding bootcamps or assistive tech certifications.",
+    "deadline": "2024-08-30",
+    "award": 1500,
+    "link": "https://example.org/pb-tech"
+  }
+]

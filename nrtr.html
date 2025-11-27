@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NRTR | Empowering Individuals with Special Needs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+  const email = localStorage.getItem("userEmail");
+  const mode = localStorage.getItem("userMode");
+  
+  if (email) {
+    console.log(`Welcome back, ${email}!`);
+  } else if (mode === "guest") {
+    console.log("Guest mode act ive");
+  } else {
+    window.location.href = "login.html";
+  }
+});
+</script>
+
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <a href="nrtr.html">NRTR</a>
+    </div>
+    <nav class="nav-links">
+    <a href="/Services /services.html">Services</a>
+    <a href="/Scholarships/Scholarships-Jobs.html">Scholarships & Jobs</a>
+    <a href="/About Us/AboutUs.html">About Us</a>
+    <a href="/login.html">Login</a>
+    </nav>
+
+  </header>
+
+  <!-- Centered NRTR title -->
+  <section class="hero">
+    <h1 class="hero-title">NRTR</h1>
+  </section>
+
+  <!-- EMPOWERING SECTION -->
+<section class="empowering">
+  <div class="empower-container">
+    <img
+      src="background.jpeg"
+      alt="Empowering Image"
+      class="empower-image"
+    />
+    <div class="empower-text">
+      <h2>Empowering Individuals with Special Needs</h2>
+      <p>
+        NRTR is dedicated to uplifting individuals with special needs by
+        connecting them to resources, communities, and opportunities that
+        promote inclusion and independence.
+      </p>
+      <a href="/About Us/AboutUs.html" class="empower-btn">About Us</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- SECTION A: Resources (text left, image right) -->
+<section class="alt-section">
+  <div class="alt-section__inner">
+    <div class="alt-section__text">
+      <h2>Resources</h2>
+      <p>
+        We’ve compiled a variety of programs, support networks, and educational
+        materials designed to empower individuals and their families.
+      </p>
+      <a class="btn-outline" href="/Services /services.html">Services →</a>
+    </div>
+    <div class="alt-section__image">
+      <img src="SpecialNeed.jpeg" alt="Resources" />
+    </div>
+  </div>
+</section>
+
+<!-- SECTION B: Scholarships & Jobs (image left, text right) -->
+<section class="alt-section reverse">
+  <div class="alt-section__inner">
+    <div class="alt-section__text">
+      <h2>Scholarships & Jobs</h2>
+      <p>
+        Explore inclusive employment opportunities and scholarships curated for
+        different abilities, interests, and career paths.
+      </p>
+      <a class="btn-outline" href="/Scholarships/Scholarships-Jobs.html">Scholarships & Jobs →</a>
+    </div>
+    <div class="alt-section__image">
+      <img src="Scholarship.png" alt="Scholarships and Jobs" />
+    </div>
+  </div>
+</section>
+
+<!-- SECTION C: Self Search Engine -->
+<section class="search-section">
+  <h2>Self Search Engine</h2>
+  <p>
+    Find local programs, therapy centers, and community resources with our
+    self-service engine powered by Yelp. Enter your location or service type below
+    to discover nearby opportunities and support networks.
+  </p>
+
+  <div class="search-box">
+    <input
+      type="text"
+      id="yelpSearchInput"
+      placeholder="Search for autism programs, therapists, or support..."
+    />
+    <button id="yelpSearchBtn">Search</button>
+  </div>
+
+  <div id="yelpResults"></div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <p>Thank you for visiting our site.</p>
+      <h2 class="footer-logo">NRTR</h2>
+    </div>
+    <div class="footer-right">
+      <h4>Links:</h4>
+      <a href="/nrtr.html">Home</a>
+      <a href="/Services /services.html">Services</a>
+      <a href="/Scholarships/Scholarships-Jobs.html">Jobs/Scholarships</a>
+      <a href="/About Us/AboutUs.html">About Us</a>
+    </div>
+  </footer>
+</body>
+</html>

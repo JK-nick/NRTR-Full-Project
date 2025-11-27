@@ -1,0 +1,250 @@
+/* HEADER */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #b05ea6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #b05ea6;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-left: 25px;
+  padding: 8px 20px;
+  border: 2px solid #b05ea6;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #b05ea6;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: #b05ea6;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.nav-links a:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: #48446f;
+  color: white;
+  padding: 40px 10%;
+  border-top: 3px solid #b05ea6;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-left h2 {
+  color: #da8ed6;
+  margin: 10px 0 0;
+}
+
+.footer-right h3 {
+  color: #da8ed6;
+  margin-bottom: 10px;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: #da8ed6;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right h4 {
+  margin-bottom: 0.5rem;
+  color: #ffd3ef;
+}
+
+.footer-right a {
+  color: #f7f4fa;
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+  transition: color 0.3s;
+}
+
+.footer-right a:hover {
+  color: #ffd3ef;
+}
+
+/* SERVICES PAGE LAYOUT */
+.services-container {
+  background-image: url("Banner.png");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 5%;
+  color: #4c4972;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.services-container h1 {
+  font-size: 4rem;
+  color: #da8ed6;
+  margin-bottom: 20px;
+}
+
+.services-container p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.county-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.county-buttons a {
+  flex: 1;
+  min-width: 250px;
+  border: 3px solid #b05ea6;
+  color: #b05ea6;
+  text-decoration: none;
+  padding: 25px 0;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.county-buttons a:hover {
+  background-color: #b05ea6;
+  color: white;
+  transform: scale(1.05);
+}
+
+.county-buttons a:active {
+  transform: scale(0.98);
+}
+
+/* COUNTY LOGO STYLES */
+.county-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.county {
+  text-align: center;
+  margin: 30px;
+}
+
+.county a {
+  text-decoration: none;
+  color: #b05ea6;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.county-content {
+  display: flex;
+  flex-direction: column; /* stack name above image */
+  align-items: center; /* center horizontally */
+}
+
+.county img {
+  display: block;
+  margin-top: 10px;
+  width: 200px; /* adjust as needed */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.county img:hover {
+  transform: scale(1.05);
+}
+
+.back-home-btn {
+  display: inline-block;
+  margin: 0 auto 25px auto; /* centers horizontally */
+  padding: 12px 28px;
+  border: 2px solid #b05ea6;
+  border-radius: 10px;
+  color: #b05ea6;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition: all 0.25s ease;
+  text-align: center;
+}
+
+.back-home-btn:hover {
+  background-color: #b05ea6;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.back-home-btn:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.25);
+}
+
+.back-btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+
+
+/* Ensure background matches homepage */
+body {
+  background-image: url("/Your\ paragraph\ text.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #4c4972;
+}
+
+/* Highlight current page in nav */
+.nav-links a.active {
+  background-color: #b05ea6;
+  color: white;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.25);
+}
