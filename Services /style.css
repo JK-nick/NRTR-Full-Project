@@ -213,7 +213,7 @@
 
 .back-home-btn:hover {
   background-color: #b05ea6;
-  color: white;
+  color: white; 
   transform: translateY(-2px);
 }
 
